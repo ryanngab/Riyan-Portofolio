@@ -11,7 +11,7 @@ export const Bio = {
     "Saya adalah individu yang termotivasi, selalu bersemangat untuk menghadapi tantangan baru. Dengan semangat belajar, saya berdedikasi untuk memberikan hasil berkualitas tinggi. Dengan sikap positif dan pola pikir berkembang, saya siap memberikan kontribusi dan mencapai hal-hal besar.",
   github: "https://github.com/ryanngab",
   resume:
-    "https://drive.google.com/file/d/1oZVM3zvTcJuPJqepWyZ-3M5agV5q7kS1/view?usp=drive_link",
+    "https://drive.google.com/file/d/1efTeIoHgO9HGB3nrdDjBuiVbBKPJuEmG/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/muhamad-riyan-firdaus-929035284/",
   twitter: "",
   insta: "https://www.instagram.com/yanz.404/",
