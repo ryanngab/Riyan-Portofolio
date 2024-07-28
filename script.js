@@ -175,10 +175,10 @@ const cardData = [
     },
     {
         id: 'card7',
-        title: "PPDB Online",
+        title: "Mobile Developer",
         date: "20-07-2024",
         description: "Sistem Pendaftaran Peserta Didik Baru (PPDB) online yang dirancang untuk memudahkan proses pendaftaran di sekolah. Platform ini menggunakan Laravel, Bootstrap, dan MySQL untuk memberikan pengalaman pengguna yang intuitif dan efisien.",
-        tags: ["Laravel", "Bootstrap", "MySQL"],
+        tags: ["Java","Android Studio", "Kominfo", "Digitalent"],
         imgSrc: "/img/Project/ppdb.png"
     },
     {
