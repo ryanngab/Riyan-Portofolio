@@ -100,8 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // JavaScript for handling filtering and modal
 
-// JavaScript for handling filtering and modal
-
 // Toggle filter functionality
 const toggleButtons = document.querySelectorAll('.toggle-button');
 const cards = document.querySelectorAll('.card');
@@ -123,8 +121,112 @@ toggleButtons.forEach(button => {
         });
     });
 });
-function openModal() {
-    document.getElementById('modal').style.display = 'flex';
+
+
+// Array of card data
+const cardData = [
+    {
+        id: 'card1',
+        title: "Ryan's Diner",
+        date: "20-07-2024",
+        description: "Website yang dirancang untuk meningkatkan pengalaman pengguna dalam pemesanan makanan secara online. Menggunakan Laravel, Bootstrap, dan MySQL untuk membangun sistem yang responsif dan aman.",
+        tags: ["Laravel", "Bootstrap", "MySQL"],
+        imgSrc: "/img/Project/ryan-diner.png"
+    },
+    {
+        id: 'card2',
+        title: "PPDB Online",
+        date: "20-07-2024",
+        description: "Sistem Pendaftaran Peserta Didik Baru (PPDB) online yang dirancang untuk memudahkan proses pendaftaran di sekolah. Platform ini menggunakan Laravel, Bootstrap, dan MySQL untuk memberikan pengalaman pengguna yang intuitif dan efisien.",
+        tags: ["Laravel", "Bootstrap", "MySQL"],
+        imgSrc: "/img/Project/ppdb.png"
+    },
+    {
+        id: 'card3',
+        title: "SIM Inventaris",
+        date: "20-07-2024",
+        description: "Sistem Informasi Manajemen (SIM) Inventaris Barang,dirancang untuk memudahkan pengelolaan dan pelacakan barang inventaris.Aplikasi ini menggunakan Laravel,Bootstrap, dan MySQL untuk menyediakan antarmuka yang ramah pengguna dan fungsionalitas yang handal.",
+        tags: ["Laravel", "Bootstrap", "MySQL"],
+        imgSrc: "/img/Project/Sim-Inventaris.png"
+    },
+    {
+        id: 'card4',
+        title: "E-commerce",
+        date: "20-07-2024",
+        description: "Platform e-commerce yang dirancang untuk memfasilitasi transaksi online dan pengelolaan produk. Menggunakan Laravel, Bootstrap, dan MySQL untuk menyediakan antarmuka pengguna yang intuitif dan pengalaman berbelanja yang optimal. Sistem ini memudahkan manajemen inventaris,pemrosesan pesanan, dan analitik bisnis.",
+        tags: ["Laravel", "Bootstrap", "MySQL"],
+        imgSrc: "/img/Project/E-commers-L.png"
+    },
+    {
+        id: 'card5',
+        title: "E-commerce",
+        date: "20-07-2024",
+        description: "Platform e-commerce yang dirancang untuk memfasilitasi transaksi online dan pengelolaan produk. Menggunakan React js, Express, CSS dan MySQL untuk menyediakan antarmuka pengguna yang intuitif dan pengalaman berbelanja yang optimal. Sistem ini memudahkan manajemen inventaris, pemrosesan pesanan, dan analitik bisnis.",
+        tags: ["React js", "CSS", "MySQL", "Express"],
+        imgSrc: "/img/Project/E-commers-R.png"
+    },
+    {
+        id: 'card6',
+        title: "HTML Certification",
+        date: "20-07-2024",
+        description: "Platform e-commerce yang dirancang untuk memfasilitasi transaksi online dan pengelolaan produk. Menggunakan React js, Express, CSS dan MySQL untuk menyediakan antarmuka pengguna yang intuitif dan pengalaman berbelanja yang optimal. Sistem ini memudahkan manajemen inventaris, pemrosesan pesanan, dan analitik bisnis.",
+        tags: ["HTML", "CSS", "Certiport"],
+        imgSrc: "/img/Project/HTML.png"
+    },
+    {
+        id: 'card7',
+        title: "PPDB Online",
+        date: "20-07-2024",
+        description: "Sistem Pendaftaran Peserta Didik Baru (PPDB) online yang dirancang untuk memudahkan proses pendaftaran di sekolah. Platform ini menggunakan Laravel, Bootstrap, dan MySQL untuk memberikan pengalaman pengguna yang intuitif dan efisien.",
+        tags: ["Laravel", "Bootstrap", "MySQL"],
+        imgSrc: "/img/Project/ppdb.png"
+    },
+    {
+        id: 'card8',
+        title: "PPDB Online",
+        date: "20-07-2024",
+        description: "Sistem Pendaftaran Peserta Didik Baru (PPDB) online yang dirancang untuk memudahkan proses pendaftaran di sekolah. Platform ini menggunakan Laravel, Bootstrap, dan MySQL untuk memberikan pengalaman pengguna yang intuitif dan efisien.",
+        tags: ["Laravel", "Bootstrap", "MySQL"],
+        imgSrc: "/img/Project/ppdb.png"
+    },
+    {
+        id: 'card9',
+        title: "PPDB Online",
+        date: "20-07-2024",
+        description: "Sistem Pendaftaran Peserta Didik Baru (PPDB) online yang dirancang untuk memudahkan proses pendaftaran di sekolah. Platform ini menggunakan Laravel, Bootstrap, dan MySQL untuk memberikan pengalaman pengguna yang intuitif dan efisien.",
+        tags: ["Laravel", "Bootstrap", "MySQL"],
+        imgSrc: "/img/Project/ppdb.png"
+    },
+
+    // Add more card data objects as needed
+];
+
+function openModal(card) {
+    const cardId = card.id;
+
+    // Find the corresponding data for the clicked card
+    const data = cardData.find(item => item.id === cardId);
+
+    if (data) {
+        // Set data in the modal
+        document.querySelector('.modal3 .title3').innerText = data.title;
+        document.querySelector('.modal3 .date3').innerText = data.date;
+        document.querySelector('.modal3 .desc3').innerText = data.description;
+        document.querySelector('.modal3 .image3').src = data.imgSrc;
+
+        // Clear previous tags and add new ones
+        const tagsContainer = document.querySelector('.modal3 .tags3');
+        tagsContainer.innerHTML = '';
+        data.tags.forEach(tag => {
+            const tagElement = document.createElement('span');
+            tagElement.classList.add('tag3');
+            tagElement.innerText = tag;
+            tagsContainer.appendChild(tagElement);
+        });
+
+        // Show the modal
+        document.getElementById('modal').style.display = 'flex';
+    }
 }
 
 function closeModal() {
@@ -139,7 +241,35 @@ window.onclick = function (event) {
     }
 }
 
+// Function to initialize the cards with data
+function initializeCards() {
+    cardData.forEach(data => {
+        const cardElement = document.getElementById(data.id);
+        if (cardElement) {
+            cardElement.querySelector('.card-title').innerText = data.title;
+            cardElement.querySelector('.date').innerText = data.date;
+            cardElement.querySelector('.description').innerText = data.description;
+            cardElement.querySelector('.image').src = data.imgSrc;
 
+            // Set tags
+            const tags = cardElement.querySelectorAll('.tag');
+            data.tags.forEach((tag, index) => {
+                if (tags[index]) {
+                    tags[index].innerText = tag;
+                }
+            });
+        }
+    });
+}
+
+// Call the initialize function on window load
+window.onload = initializeCards;
+
+
+
+
+
+//eart
 let scene, camera, renderer, controls;
 
 function init() {
