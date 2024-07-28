@@ -109,10 +109,9 @@ nav {
   color: inherit;
 }
 
-.name span{
+.name span {
   color: var(--primary);
 }
-
 
 /* Color Text Styles */
 /* Navigation Items Styles */
@@ -636,13 +635,19 @@ nav {
   left: 50%;
 }
 
-.container img {
+.img-experience {
   position: absolute;
   width: 40px;
   border-radius: 50%;
   right: -20px;
   top: 32px;
   z-index: 10;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 4px #fff, inset 0 2px 0 #00000014,
+    0 3px 0 4px #0000000d;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 #00000014, 0 3px 0 4px #0000000d;
+  height: 40px;
+  object-fit: cover;
 }
 
 .right-container img {
@@ -654,7 +659,7 @@ nav {
   position: absolute;
   width: 6px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.125);
+  background: rgba(255, 255, 255, 0.87);
   top: 0;
   left: 50%;
   margin-left: -3px;
@@ -746,6 +751,116 @@ nav {
     border-left: 0;
     left: -15px;
   }
+}
+
+.top-experience {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  gap: 12px;
+}
+
+.image-experience {
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-experience {
+    height: 40px;
+  }
+}
+
+.body-experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.role-experience {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+}
+
+@media only screen and (max-width: 768px) {
+  .role-experience {
+    font-size: 14px;
+  }
+}
+
+.company-experience {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+}
+
+@media only screen and (max-width: 768px) {
+  .company-experience {
+    font-size: 12px;
+  }
+}
+
+.date-experience {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+}
+
+@media only screen and (max-width: 768px) {
+  .date-experience {
+    font-size: 10px;
+  }
+}
+
+.description-experience {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .description-experience {
+    font-size: 12px;
+  }
+}
+
+.span-experience {
+  display: -webkit-box;
+  max-width: 100%;
+}
+
+.skills-experience {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-top: -10px;
+}
+
+.skill-experience {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+}
+
+@media only screen and (max-width: 768px) {
+  .skill-experience {
+    font-size: 12px;
+  }
+}
+
+.item-wrapper-experience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 /* Projwct */
