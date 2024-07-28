@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.1/dist/vanilla-tilt.min.js"></script>
+    <title>YanDev-Fullstack Developer</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- Body Component -->
+        <div class="body">
+            <!-- Navbar Component -->
+            <nav>
+                <div class="navbar">
+                    <a href="" class="name">
+                        <span>
+                            <</span>Riyan<span>/</span>Firdaus <span>></span>
+                    </a>
+
+                    <div class="mobile-icon" onclick="toggleMenu(this)">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5v2h18V8H3z" />
+                        </svg>
+                    </div>
+
+                    <div class="nav-items" style="align-items: center;">
+                        <a class="nav-link" href="#About">About</a>
+                        <a class="nav-link" href="#Skills">Skills</a>
+                        <a class="nav-link" href="#Experience">Experience</a>
+                        <a class="nav-link" href="#Projects">Projects</a>
+                        <a class="nav-link" href="#Education">Education</a>
+                    </div>
+
+                    <div class="mobile-menu" id="mobileMenu">
+                        <a class="nav-link" href="#About">About</a>
+                        <a class="nav-link" href="#Skills">Skills</a>
+                        <a class="nav-link" href="#Experience">Experience</a>
+                        <a class="nav-link" href="#Projects">Projects</a>
+                        <a class="nav-link" href="#Education">Education</a>
+                        <a class="github-button" href="https://github.com/ryanngab" target="_blank">Github
+                            Profile</a>
+                    </div>
+
+                    <div class="button-container">
+                        <a class="github-button" href="https://github.com/ryanngab" target="_blank">Github
+                            Profile</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- StarCanvas Component -->
+            <div class="star-canvas">
+                <!-- StarCanvas content -->
+            </div>
+
+            <!-- Main Content -->
+            <div>
+                <!-- Hero Component -->
+                <div id="About" class="hero-container">
+                    <div class="hero-bg">
+                        <!-- Konten hero-bg -->
+                    </div>
+
+                    <div class="hero-inner-container">
+                        <div class="hero-left-container">
+                            <div class="hello"> Hi, I am <br> Muhamad Riyan Firdaus
+                            </div>
+                            <div class="text-loop"> I am a <span class="span">Web Developer</span>
+                            </div>
+                            <div class="subtitle"> Passionate about web development and creating amazing
+                                experiences.
+                            </div>
+                            <a href="https://drive.google.com/file/d/1o36U6mO43pmvHEiYtD6SPEbSCQHYYPT4/view?usp=sharing" target="_blank" class="resume-button"> Check Resume
+                            </a>
+                        </div>
+                        <div class="hero-right-container">
+                            <div class="img"> <img src="/img/Heroimg.jpg" class="profile" alt="Rishav Chanda">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wrapper Component -->
+                <div class="wrapper">
+                    <!-- Skills Component -->
+                    <section class="skills" id="Skills">
+                        <!-- Skills content -->
+                        <h1 class="title">Skills</h1>
+                        <p class="desc">
+                            Here are some of my skills on which I have been working on for the past 3 years.
+                        </p>
+
+                        <div class="skills-container">
+                            <div class="skill">
+                                <h2 class="skill-title">Frontend</h2>
+                                <div class="skill-list">
+                                    <div class="skill-item"> <img src="/img/Skill/html.png" alt="Skill Name"
+                                            class="skill-image">
+                                        HTML</div>
+                                    <div class="skill-item"> <img src="/img/Skill/CSS3_.svg.png" alt="Skill Name"
+                                            class="skill-image">
+                                        CSS</div>
+                                    <div class="skill-item"> <img src="/img/Skill/JavaScript-logo.png.webp"
+                                            alt="Skill Name" class="skill-image">
+                                        JavaScript </div>
+                                    <div class="skill-item"> <img src="/img/Skill/bootstrap-logo-shadow.png"
+                                            alt="Skill Name" class="skill-image">
+                                        Bootstrap</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h2 class="skill-title">Backend</h2>
+                                <div class="skill-list">
+                                    <div class="skill-item"> <img
+                                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                                            alt="Skill Name" class="skill-image">
+                                        MySQL </div>
+                                    <div class="skill-item"> <img src="https://laravel.com/img/logomark.min.svg"
+                                            alt="Skill Name" class="skill-image">
+                                        Laravel</div>
+                                    <div class="skill-item"> <img src="/img/Skill/elephant.png" alt="Skill Name"
+                                            class="skill-image">
+                                        Postgresql</div>
+                                    <div class="skill-item"> <img src="/img/Skill/PHP-logo.svg" alt="Skill Name"
+                                            class="skill-image">
+                                        PHP</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h2 class="skill-title">Others</h2>
+                                <div class="skill-list">
+                                    <div class="skill-item"> <img src="/img/Skill/figma.png" alt="Skill Name"
+                                            class="skill-image">
+                                        Figma</div>
+                                    <div class="skill-item"> <img
+                                            src="/img/Skill/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png"
+                                            alt="Skill Name" class="skill-image">
+                                        git</div>
+                                    <div class="skill-item"> <img src="/img/Skill/GitHub-Mark.png" alt="Skill Name"
+                                            class="skill-image">
+                                        github</div>
+                                    <div class="skill-item"> <img src="/img/Skill/netlify-logo-BD8F8A77E2-seeklogo.com.png" alt="Skill Name"
+                                            class="skill-image">
+                                        Netlify</div>
+                                    <div class="skill-item"> <img
+                                            src="/img/Skill/Visual_Studio_Code_1.35_icon.svg.webp"
+                                            alt="Skill Name" class="skill-image">
+                                        VS Code</div>
+                                    <div class="skill-item"> <img src="/img/Skill/postman-icon-497x512-beb7sy75.png" alt="Skill Name"
+                                            class="skill-image">
+                                        Postman</div>
+                                </div>
+                            </div>
+                            <!-- Repeat Skill Items as needed -->
+                        </div>
+                    </section>
+
+                    <!-- Experience Component -->
+                    <section class="experience" id="Experience">
+                        <!-- Experience content -->
+                        <h1 class="title">
+                            Experience
+                        </h1>
+                        <p class="desc">
+                            My work experience as a software engineer and working on different companies and projects.
+                        </p>
+                        <div class="timeline">
+                            <div class="container left-container">
+                                <img src="/img/Experience/mitreka.png" alt="">
+                                <div class="text-box">
+                                    <h2>Alphabet</h2>
+                                    <small>2020-2024</small>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, dolore fugiat
+                                        minus
+                                        commodi
+                                        facilis saepe.</p>
+                                    <span class="left-container-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="container right-container">
+                                <img src="/img/Experience/mitreka.png" alt="">
+                                <div class="text-box">
+                                    <h2>Alphabet</h2>
+                                    <small>2020-2024</small>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, dolore fugiat
+                                        minus
+                                        commodi
+                                        facilis saepe.</p>
+                                    <span class="right-container-arrow"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Projects Component -->
+                <section class="project" id="Projects">
+                    <div class="projects">
+                        <!-- Projects content -->
+                        <div class="title">Projects</div>
+                        <div class="desc">I have worked on a wide range of projects. From web apps to android apps. Here
+                            are
+                            some of
+                            my
+                            projects.</div>
+                        <div class="toggle-button-group">
+                            <div class="toggle-button active" data-filter="all">ALL</div>
+                            <div class="divider"></div>
+                            <div class="toggle-button" data-filter="web app">WEB APPS</div>
+                            <div class="divider"></div>
+                            <div class="toggle-button" data-filter="android app">ANDROID APPS</div>
+                            <div class="divider"></div>
+                            <div class="toggle-button" data-filter="machine learning">MACHINE LEARNING</div>
+                        </div>
+                        <!-- Example of a project item -->
+                        <div class="card-container">
+                            <!-- Example of a project card -->
+                            <div class="card" data-category="web app" onclick="openModal(this)">
+                                <img class="image" src="/img/Experience/mitreka.png" alt="Project Image">
+                                <div class="tags">
+                                    <div class="tag">React</div>
+                                    <div class="tag">JavaScript</div>
+                                </div>
+                                <div class="details">
+                                    <div class="card-title">Project Title</div>
+                                    <div class="date">2023-07-25</div>
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Suscipit,
+                                        commodi recusandae distinctio cum, unde esse aspernatur nemo aperiam
+                                        necessitatibus,
+                                        repellendus labore excepturi. Cumque incidunt, explicabo ipsum, quidem omnis,
+                                        obcaecati
+                                        voluptas voluptatibus ducimus in ut quisquam minus dignissimos enim ab tenetur?
+                                    </div>
+                                </div>
+                                <div class="members">
+                                    <img class="avatar" src="/img/Experience/mitreka.png" alt="Member Avatar">
+                                    <img class="avatar" src="/img/Experience/mitreka.png" alt="Member Avatar">
+                                </div>
+                            </div>
+                            <div class="card" data-category="web app" onclick="openModal(this)">
+                                <img class="image" src="/img/Experience/mitreka.png" alt="Project Image">
+                                <div class="tags">
+                                    <div class="tag">React</div>
+                                    <div class="tag">JavaScript</div>
+                                </div>
+                                <div class="details">
+                                    <div class="card-title">Project Title</div>
+                                    <div class="date">2023-07-25</div>
+                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Suscipit,
+                                        commodi recusandae distinctio cum, unde esse aspernatur nemo aperiam
+                                        necessitatibus,
+                                        repellendus labore excepturi. Cumque incidunt, explicabo ipsum, quidem omnis,
+                                        obcaecati
+                                        voluptas voluptatibus ducimus in ut quisquam minus dignissimos enim ab tenetur?
+                                    </div>
+                                </div>
+                                <div class="members">
+                                    <img class="avatar" src="/img/Experience/mitreka.png" alt="Member Avatar">
+                                    <img class="avatar" src="/img/Experience/mitreka.png" alt="Member Avatar">
+                                </div>
+                            </div>
+                            <!-- Add more project cards as needed -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wrapper Component -->
+                <div class="wrapper">
+                    <!-- Education Component -->
+                    <section class="education" id="Education">
+                        <!-- Education content -->
+                        <h1 class="title">
+                            Education
+                        </h1>
+                        <p class="desc">
+                            My work experience as a software engineer and working on different companies and projects.
+                        </p>
+
+                        <div class="timeline">
+                            <div class="container left-container">
+                                <img src="/img/Education/Wikrama.png" alt="">
+                                <div class="text-box">
+                                    <h2>SMK Wikrama Bogor</h2>
+                                    <small>juni 2021- juli 2024</small>
+                                    <p>Saya bersekolah di SMK Wikrama Bogor dan mengambil jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)</p>
+                                    <span class="left-container-arrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Component -->
+                    <section class="contact">
+                        <!-- Contact content -->
+                        <div class="contact-head">
+                            <!-- Replace with your content or EarthCanvas component -->
+                            <div class="earth-canvas">
+                                <div class="earth-canvas2">
+                                    <!-- <div id="container">
+                                        
+                                    </div> -->
+                                </div>
+                                <!-- EarthCanvas Content -->
+                            </div>
+                            <div class="title">Contact</div>
+                            <div class="desc">
+                                Feel free to reach out to me for any questions or opportunities!
+                            </div>
+                            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                                <div class="contact-title">Email Me 🚀</div>
+                                <input type="email" name="from_email" class="contact-input" placeholder="Your Email"
+                                    required />
+                                <input type="text" name="from_name" class="contact-input" placeholder="Your Name"
+                                    required />
+                                <input type="text" name="subject" class="contact-input" placeholder="Subject"
+                                    required />
+                                <textarea name="message" class="contact-input-message" placeholder="Message" rows="4"
+                                    required></textarea>
+                                <input type="submit" class="contact-button" value="Send" />
+                            </form>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Footer Component -->
+                <footer class="footer-container">
+                    <div class="footer-wrapper">
+                        <div class="logo">Muhamad Riyan Firdaus</div>
+                        <nav class="nav">
+                            <a href="#About" class="nav-link">About</a>
+                            <a href="#Skills" class="nav-link">Skills</a>
+                            <a href="#Experience" class="nav-link">Experience</a>
+                            <a href="#Projects" class="nav-link">Projects</a>
+                            <a href="#Education" class="nav-link">Education</a>
+                        </nav>
+                        <div class="social-media-icons">
+                            <a href="facebook-url" target="_blank" class="social-media-icon">
+                            </a>
+                            <a href="twitter-url" target="_blank" class="social-media-icon">
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhamad-riyan-firdaus-929035284/" target="_blank" class="social-media-icon">
+                            </a>
+                            <a href="https://www.instagram.com/yanz.404/" target="_blank" class="social-media-icon">
+                            </a>
+                        </div>
+                        <div class="copyright">&copy; 2024 Rishav Chanda. All rights reserved.</div>
+                    </div>
+                </footer>
+
+                <!-- ProjectDetails Modal -->
+                <div class="modal3" id="modal">
+                    <div class="modal-head">
+                        <div class="modal-content">
+                            <div class="container3">
+                                <span class="close" onclick="closeModal()">X</span>
+                                <img class="image3" src="/img/Experience/mitreka.png" alt="Project Image">
+                                <h1 class="title3">Project Title</h1>
+                                <p class="date3">Project Date</p>
+                                <div class="tags3">
+                                    <span class="tag3">Tag1</span>
+                                    <span class="tag3">Tag2</span>
+                                </div>
+                                <p class="desc3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
+                                    asperiores
+                                    quasi
+                                    architecto ipsam consequuntur corporis ipsa molestias vero recusandae. Quibusdam,
+                                    vitae
+                                    voluptatum
+                                    quis inventore totam commodi adipisci cupiditate labore vero recusandae fugiat iure
+                                    ut
+                                    maiores
+                                    culpa
+                                    saepe earum sapiente animi!</p>
+                                <div class="label3">Members</div>
+                                <div class="members3">
+                                    <div class="member3">
+                                        <img class="member-image3" src="/img/Experience/mitreka.png" alt="Member Image">
+                                        <span class="member-name3">Ryan</span>
+                                        <a href="member-github-url" target="_blank" class=""></a>
+                                        <a href="member-linkedin-url" target="_blank" class=""></a>
+                                    </div>
+                                </div>
+                                <div class="button-group3">
+                                    <a href="project-github-url" target="_blank" class="button3 dull3">View Code</a>
+                                    <a href="project-webapp-url" target="_blank" class="button3 primary">View Live
+                                        App</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- OrbitControls and GLTFLoader extensions -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- TypewriterJS -->
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect/dist/core.js"></script>
+    <!-- Tilt.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.1/dist/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
