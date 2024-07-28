@@ -452,6 +452,29 @@ nav {
 }
 
 /* Skills */
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+.wrapper1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+}
+@media (max-width: 960px) {
+  .wrapper1 {
+    flex-direction: column;
+  }
+}
 /* Container Styles */
 
 /* Title Styles */
@@ -621,8 +644,6 @@ nav {
   /* border-radius: 6px; */
   font-size: 15px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1509,4 +1530,140 @@ nav {
   font-size: 0.9rem;
   color: var(--soft2);
   text-align: center;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Space around the SVG */
+}
+
+.svg-container svg {
+  width: 72px; /* Adjust size as needed */
+  height: 72px; /* Adjust size as needed */
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+}
+
+
+
+
+/* Testimoni */
+
+.testimoni-carousel {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.slick-slide {
+    margin: 0 10px; /* 10px gap on each side of the slide */
+}
+
+.slick-list {
+    margin: 0 -10px; /* Negative margin to offset the total margin of slides */
+}
+
+
+.testi-box {
+  position: relative;
+  font-size: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #1d1836;
+  color: #fff;
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  background-color: rgba(17, 25, 40, 0.83);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.top-testi {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  gap: 12px;
+}
+
+.image-testi {
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-testi {
+    height: 40px;
+  }
+}
+
+.body-testi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-testi {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+}
+
+@media only screen and (max-width: 768px) {
+  .name-testi {
+    font-size: 14px;
+  }
+}
+
+.company-testi {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+}
+
+@media only screen and (max-width: 768px) {
+  .company-testi {
+    font-size: 12px;
+  }
+}
+
+.date-testi {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+}
+
+@media only screen and (max-width: 768px) {
+  .date-testi {
+    font-size: 10px;
+  }
+}
+
+.description-testi {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text_secondary);
+  /* Replace with actual color value */
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .description-testi {
+    font-size: 12px;
+  }
+}
+
+.span-testi {
+  display: -webkit-box;
+  max-width: 100%;
 }

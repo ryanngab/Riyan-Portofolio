@@ -7,6 +7,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.1/dist/vanilla-tilt.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- Page Title for SEO -->
     <title>Riyandev - Fullstack Developer | Web Development Portfolio</title>
 
@@ -90,7 +93,7 @@
             <!-- Main Content -->
             <div>
                 <!-- Hero Component -->
-                <div id="About" class="hero-container">
+                <div id="About" class="hero-container" style="margin-bottom: 75px;">
                     <div class="hero-bg">
                         <!-- Konten hero-bg -->
                     </div>
@@ -120,81 +123,169 @@
 
                 <!-- Wrapper Component -->
                 <div class="wrapper">
-                    <!-- Skills Component -->
-                    <section class="skills" id="Skills">
-                        <!-- Skills content -->
-                        <h1 class="title">Kemampuan</h1>
-                        <p class="desc">
-                            Berikut adalah beberapa keterampilan saya yang telah saya kerjakan selama 3 tahun terakhir.
-                        </p>
+                    <!-- Servis Component -->
+                    <section class="container1" id="servis" style="margin-bottom: 75px;">
+                        <div class="wrapper1">
+                            <!-- Skills content -->
+                            <h1 class="title">Servis</h1>
+                            <p class="desc">
+                                Berikut adalah beberapa jasa atau layanan yang saya sediakan.
+                            </p>
+                            <div class="skills-container">
+                                <div class="skill">
+                                    <h2 class="skill-title">Aplikasi Web</h2>
+                                    <div class="svg-container">
+                                        <svg width="72" height="72" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2" y="6" width="32" height="24" rx="2" fill="none" stroke="white"
+                                                stroke-width="2" />
+                                            <path d="M2 10h32" stroke="white" stroke-width="2" />
+                                            <circle cx="6" cy="8" r="1" fill="white" />
+                                            <circle cx="10" cy="8" r="1" fill="white" />
+                                            <circle cx="14" cy="8" r="1" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <p class="skill-desc">Saya dapat membuat website yang sesuai dengan kebutuhan</p>
+                                </div>
 
-                        <div class="skills-container">
-                            <div class="skill">
-                                <h2 class="skill-title">Frontend</h2>
-                                <div class="skill-list">
-                                    <div class="skill-item"> <img src="/img/Skill/html.png" alt="Skill Name"
-                                            class="skill-image">
-                                        HTML</div>
-                                    <div class="skill-item"> <img src="/img/Skill/CSS3_.svg.png" alt="Skill Name"
-                                            class="skill-image">
-                                        CSS</div>
-                                    <div class="skill-item"> <img src="/img/Skill/JavaScript-logo.png.webp"
-                                            alt="Skill Name" class="skill-image">
-                                        JavaScript </div>
-                                    <div class="skill-item"> <img src="/img/Skill/bootstrap-logo-shadow.png"
-                                            alt="Skill Name" class="skill-image">
-                                        Bootstrap</div>
+                                <div class="skill">
+                                    <h2 class="skill-title">SEO</h2>
+                                    <div class="svg-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
+                                            fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+                                                stroke="white" stroke-width="1" fill="none" />
+                                            <path
+                                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+                                                stroke="white" stroke-width="1" fill="none" />
+                                        </svg>
+                                    </div>
+                                    <p class="skill-desc">Membuat situs web anda mudah ditemukan di pencarian Google</p>
+                                </div>
+
+                                <div class="skill">
+                                    <h2 class="skill-title">Company Profile</h2>
+                                    <div class="svg-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
+                                            fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
+                                                stroke="white" stroke-width="1" fill="none" />
+                                        </svg>
+                                    </div>
+                                    <p class="skill-desc">Membuat Profil Perusahaan profesional untuk membranding
+                                        kebutuhan
+                                        bisnis anda</p>
+                                </div>
+
+                                <div class="skill">
+                                    <h2 class="skill-title">Aplikasi Mobile</h2>
+                                    <div class="svg-container">
+                                        <svg width="72" height="72" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="10" y="3" width="16" height="30" rx="2" fill="none" stroke="white"
+                                                stroke-width="2" />
+                                            <circle cx="18" cy="28" r="1" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <p class="skill-desc">Membuat Aplikasi Android dan iOS sesuai kebutuhan</p>
+                                </div>
+
+                                <div class="skill">
+                                    <a href="https://wa.me/6283137991102" target="_blank" class="social-media-icon"
+                                        style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                                        <i class="bi bi-whatsapp" style="margin-right: 8px;"></i>
+                                        <span>Pesan Sekarang</span>
+                                    </a>
+                                </div>
+
+                                <!-- Repeat Skill Items as needed -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="container1" id="Skills" style="margin-bottom: 75px;">
+                        <div class="container1">
+                            <div class="wrapper1">
+                                <!-- Skills content -->
+                                <h1 class="title">Kemampuan</h1>
+                                <p class="desc">
+                                    Berikut adalah beberapa keterampilan saya yang telah saya kerjakan selama 3 tahun
+                                    terakhir.
+                                </p>
+
+                                <div class="skills-container">
+                                    <div class="skill">
+                                        <h2 class="skill-title">Frontend</h2>
+                                        <div class="skill-list">
+                                            <div class="skill-item"> <img src="/img/Skill/html.png" alt="Skill Name"
+                                                    class="skill-image">
+                                                HTML</div>
+                                            <div class="skill-item"> <img src="/img/Skill/CSS3_.svg.png"
+                                                    alt="Skill Name" class="skill-image">
+                                                CSS</div>
+                                            <div class="skill-item"> <img src="/img/Skill/JavaScript-logo.png.webp"
+                                                    alt="Skill Name" class="skill-image">
+                                                JavaScript </div>
+                                            <div class="skill-item"> <img src="/img/Skill/bootstrap-logo-shadow.png"
+                                                    alt="Skill Name" class="skill-image">
+                                                Bootstrap</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <h2 class="skill-title">Backend</h2>
+                                        <div class="skill-list">
+                                            <div class="skill-item"> <img
+                                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                                                    alt="Skill Name" class="skill-image">
+                                                MySQL </div>
+                                            <div class="skill-item"> <img src="https://laravel.com/img/logomark.min.svg"
+                                                    alt="Skill Name" class="skill-image">
+                                                Laravel</div>
+                                            <div class="skill-item"> <img src="/img/Skill/elephant.png" alt="Skill Name"
+                                                    class="skill-image">
+                                                Postgresql</div>
+                                            <div class="skill-item"> <img src="/img/Skill/PHP-logo.svg" alt="Skill Name"
+                                                    class="skill-image">
+                                                PHP</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <h2 class="skill-title">Others</h2>
+                                        <div class="skill-list">
+                                            <div class="skill-item"> <img src="/img/Skill/figma.png" alt="Skill Name"
+                                                    class="skill-image">
+                                                Figma</div>
+                                            <div class="skill-item"> <img
+                                                    src="/img/Skill/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png"
+                                                    alt="Skill Name" class="skill-image">
+                                                git</div>
+                                            <div class="skill-item"> <img src="/img/Skill/GitHub-Mark.png"
+                                                    alt="Skill Name" class="skill-image">
+                                                github</div>
+                                            <div class="skill-item"> <img
+                                                    src="/img/Skill/netlify-logo-BD8F8A77E2-seeklogo.com.png"
+                                                    alt="Skill Name" class="skill-image">
+                                                Netlify</div>
+                                            <div class="skill-item"> <img
+                                                    src="/img/Skill/Visual_Studio_Code_1.35_icon.svg.webp"
+                                                    alt="Skill Name" class="skill-image">
+                                                VS Code</div>
+                                            <div class="skill-item"> <img
+                                                    src="/img/Skill/postman-icon-497x512-beb7sy75.png" alt="Skill Name"
+                                                    class="skill-image">
+                                                Postman</div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat Skill Items as needed -->
                                 </div>
                             </div>
-                            <div class="skill">
-                                <h2 class="skill-title">Backend</h2>
-                                <div class="skill-list">
-                                    <div class="skill-item"> <img
-                                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                                            alt="Skill Name" class="skill-image">
-                                        MySQL </div>
-                                    <div class="skill-item"> <img src="https://laravel.com/img/logomark.min.svg"
-                                            alt="Skill Name" class="skill-image">
-                                        Laravel</div>
-                                    <div class="skill-item"> <img src="/img/Skill/elephant.png" alt="Skill Name"
-                                            class="skill-image">
-                                        Postgresql</div>
-                                    <div class="skill-item"> <img src="/img/Skill/PHP-logo.svg" alt="Skill Name"
-                                            class="skill-image">
-                                        PHP</div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <h2 class="skill-title">Others</h2>
-                                <div class="skill-list">
-                                    <div class="skill-item"> <img src="/img/Skill/figma.png" alt="Skill Name"
-                                            class="skill-image">
-                                        Figma</div>
-                                    <div class="skill-item"> <img
-                                            src="/img/Skill/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png"
-                                            alt="Skill Name" class="skill-image">
-                                        git</div>
-                                    <div class="skill-item"> <img src="/img/Skill/GitHub-Mark.png" alt="Skill Name"
-                                            class="skill-image">
-                                        github</div>
-                                    <div class="skill-item"> <img
-                                            src="/img/Skill/netlify-logo-BD8F8A77E2-seeklogo.com.png" alt="Skill Name"
-                                            class="skill-image">
-                                        Netlify</div>
-                                    <div class="skill-item"> <img src="/img/Skill/Visual_Studio_Code_1.35_icon.svg.webp"
-                                            alt="Skill Name" class="skill-image">
-                                        VS Code</div>
-                                    <div class="skill-item"> <img src="/img/Skill/postman-icon-497x512-beb7sy75.png"
-                                            alt="Skill Name" class="skill-image">
-                                        Postman</div>
-                                </div>
-                            </div>
-                            <!-- Repeat Skill Items as needed -->
                         </div>
                     </section>
 
                     <!-- Experience Component -->
-                    <section class="experience" id="Experience">
+                    <section class="experience" id="Experience" style="margin-bottom: 75px;">
                         <!-- Experience content -->
                         <h1 class="title">
                             Pengalaman
@@ -279,7 +370,7 @@
                 </div>
 
                 <!-- Projects Component -->
-                <section class="project" id="Projects">
+                <section class="project" id="Projects" style="margin-bottom: 75px;">
                     <div class="projects">
                         <!-- Projects content -->
                         <div class="title">Proyek</div>
@@ -461,10 +552,8 @@
 
                 <!-- Wrapper Component -->
                 <div class="wrapper">
-                    <!-- Testimoni -->
-                   
                     <!-- Education Component -->
-                    <section class="experience" id="Experience">
+                    <section class="experience" id="Experience" style="margin-bottom: 75px;">
                         <!-- Experience content -->
                         <h1 class="title">
                             Pendidikan
@@ -529,6 +618,120 @@
                         </div>
                     </section>
 
+                    <!-- Testimoni -->
+                    <div class="container1" id="testimoni">
+                        <div class="wrapper1" style="margin-bottom: 40px;">
+                            <h1 class="title">Testimoni</h1>
+                            <p class="desc">
+                                Berikut adalah beberapa testimoni dari klien dan rekan kerja yang telah bekerja sama
+                                dengan saya dalam berbagai
+                                proyek selama tiga tahun terakhir. Pendapat mereka mencerminkan kualitas dan dedikasi
+                                yang saya bawa ke setiap
+                                pekerjaan.
+                            </p>
+                        </div>
+                        <div class="testimoni-carousel">
+                            <div class="testi-box">
+                                <div class="top-testi">
+                                    <img class="image-testi" src="/img/Education/Wikrama.png" alt="SMK Wikrama Bogor" />
+                                    <div class="body-testi">
+                                        <div class="name-testi">SMK Wikrama Bogor</div>
+                                        <div class="company-testi">Jurusan - Pengembangan Perangkat Lunak dan
+                                            Gim
+                                            (PPLG)</div>
+                                        <div class="date-testi">Juni 2021 - Juni 2024</div>
+                                    </div>
+                                </div>
+                                <div class="description-testi">
+                                    <span class="span-testi">
+                                        Mengasah keterampilan dalam pengembangan perangkat lunak dan gim, dengan
+                                        fokus
+                                        pada teknologi
+                                        terbaru dan metode inovatif. Selama masa studi, terlibat dalam
+                                        proyek-proyek
+                                        yang menantang yang
+                                        memperkuat kemampuan pemrograman dan desain aplikasi.
+                                    </span>
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="testi-box">
+                                <div class="top-testi">
+                                    <img class="image-testi" src="/img/Education/Wikrama.png" alt="SMK Wikrama Bogor" />
+                                    <div class="body-testi">
+                                        <div class="name-testi">SMK Wikrama Bogor</div>
+                                        <div class="company-testi">Jurusan - Pengembangan Perangkat Lunak dan
+                                            Gim
+                                            (PPLG)</div>
+                                        <div class="date-testi">Juni 2021 - Juni 2024</div>
+                                    </div>
+                                </div>
+                                <div class="description-testi">
+                                    <span class="span-testi">
+                                        Mengasah keterampilan dalam pengembangan perangkat lunak dan gim, dengan
+                                        fokus
+                                        pada teknologi
+                                        terbaru dan metode inovatif. Selama masa studi, terlibat dalam
+                                        proyek-proyek
+                                        yang menantang yang
+                                        memperkuat kemampuan pemrograman dan desain aplikasi.
+                                    </span>
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="testi-box">
+                                <div class="top-testi">
+                                    <img class="image-testi" src="/img/Education/Wikrama.png" alt="SMK Wikrama Bogor" />
+                                    <div class="body-testi">
+                                        <div class="name-testi">SMK Wikrama Bogor</div>
+                                        <div class="company-testi">Jurusan - Pengembangan Perangkat Lunak dan
+                                            Gim
+                                            (PPLG)</div>
+                                        <div class="date-testi">Juni 2021 - Juni 2024</div>
+                                    </div>
+                                </div>
+                                <div class="description-testi">
+                                    <span class="span-testi">
+                                        Mengasah keterampilan dalam pengembangan perangkat lunak dan gim, dengan
+                                        fokus
+                                        pada teknologi
+                                        terbaru dan metode inovatif. Selama masa studi, terlibat dalam
+                                        proyek-proyek
+                                        yang menantang yang
+                                        memperkuat kemampuan pemrograman dan desain aplikasi.
+                                    </span>
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="testi-box">
+                                <div class="top-testi">
+                                    <img class="image-testi" src="/img/Education/Wikrama.png" alt="SMK Wikrama Bogor" />
+                                    <div class="body-testi">
+                                        <div class="name-testi">SMK Wikrama Bogor</div>
+                                        <div class="company-testi">Jurusan - Pengembangan Perangkat Lunak dan
+                                            Gim
+                                            (PPLG)</div>
+                                        <div class="date-testi">Juni 2021 - Juni 2024</div>
+                                    </div>
+                                </div>
+                                <div class="description-testi">
+                                    <span class="span-testi">
+                                        Mengasah keterampilan dalam pengembangan perangkat lunak dan gim, dengan
+                                        fokus
+                                        pada teknologi
+                                        terbaru dan metode inovatif. Selama masa studi, terlibat dalam
+                                        proyek-proyek
+                                        yang menantang yang
+                                        memperkuat kemampuan pemrograman dan desain aplikasi.
+                                    </span>
+                                    <br />
+                                </div>
+                            </div>
+                            <!-- Add more skill categories if needed -->
+                        </div>
+                    </div>
+
+
                 </div>
 
                 <!-- Contact Component -->
@@ -561,6 +764,7 @@
                         </form>
                     </div>
                 </section>
+
             </div>
 
             <!-- Footer Component -->
@@ -603,6 +807,50 @@
     </div>
     </div>
 
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.testimoni-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3, // Show 2 slides at a time
+                slidesToScroll: 1,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [
+                    {
+                        breakpoint: 1024, // For larger screens
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600, // For medium screens
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480, // For small screens
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
     <!-- Three.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <!-- OrbitControls and GLTFLoader extensions -->
